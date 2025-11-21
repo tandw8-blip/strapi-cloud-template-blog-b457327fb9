@@ -64,7 +64,7 @@
     "features": {
       "type": "relation",
       "relation": "manyToMany",
-      "target": "api::feature-tag.feature-tag",
+      "target": "api::shop-tag.shop-tag",
       "inversedBy": "shops"
     },
     "description": {
@@ -91,7 +91,7 @@
     "promotions": {
       "type": "relation",
       "relation": "manyToMany",
-      "target": "api::promotion.promotion",
+      "target": "api::shop-promotion.shop-promotion",
       "mappedBy": "items"
     },
     "related": {
