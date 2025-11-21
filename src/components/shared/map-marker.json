@@ -1,0 +1,11 @@
+{
+  "collectionName": "components_shared_map_markers",
+  "info": {
+    "displayName": "Map Marker"
+  },
+  "attributes": {
+    "x": { "type": "decimal" },
+    "y": { "type": "decimal" },
+    "floor": { "type": "string" }
+  }
+}
