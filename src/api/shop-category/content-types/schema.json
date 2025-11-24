@@ -1,6 +1,6 @@
 {
   "kind": "collectionType",
-  "collectionName": "shop-categories",
+  "collectionName": "shop_categories",
   "info": {
     "singularName": "shop-category",
     "pluralName": "shop-categories",
@@ -10,31 +10,15 @@
     "draftAndPublish": true
   },
   "attributes": {
-    "name": {
-      "type": "string",
-      "required": true
-    },
+    "name": { "type": "string", "required": true },
     "slug": {
       "type": "uid",
       "targetField": "name",
       "required": true
     },
-    "type": {
-      "type": "enumeration",
-      "enum": ["shop", "restaurant", "all"],
-      "default": "all",
-      "required": true
-    },
-    "description": {
-      "type": "text"
-    },
-    "icon": {
-      "type": "media",
-      "multiple": false
-    },
-    "sortOrder": {
-      "type": "integer"
-    },
+
+    "sortOrder": { "type": "integer" },
+
     "shops": {
       "type": "relation",
       "relation": "manyToMany",

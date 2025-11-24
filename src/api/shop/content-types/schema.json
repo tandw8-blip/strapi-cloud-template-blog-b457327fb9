@@ -4,100 +4,60 @@
   "info": {
     "singularName": "shop",
     "pluralName": "shops",
-    "displayName": "Shop",
-    "description": "Represents Shop or Restaurant item"
+    "displayName": "Shop"
   },
   "options": {
     "draftAndPublish": true
   },
   "attributes": {
-    "name": {
-      "type": "string",
-      "required": true
-    },
+    "name": { "type": "string", "required": true },
     "slug": {
       "type": "uid",
       "targetField": "name",
       "required": true
     },
-    "type": {
-      "type": "enumeration",
-      "enum": ["shop", "restaurant"],
-      "default": "shop",
-      "required": true
-    },
-    "bannerImage": {
-      "type": "media",
-      "multiple": false,
-      "required": true
-    },
-    "logo": {
-      "type": "media",
-      "multiple": false
-    },
+
+    "bannerImage": { "type": "media", "multiple": false },
+    "logo": { "type": "media", "multiple": false },
+
     "location": {
       "type": "relation",
       "relation": "manyToOne",
       "target": "api::location.location",
       "inversedBy": "shops"
     },
-    "unitNo": {
-      "type": "string"
-    },
-    "floor": {
-      "type": "string"
-    },
-    "locationDescription": {
-      "type": "string"
-    },
+
+    "unitNo": { "type": "string" },
+    "floor": { "type": "string" },
+
     "categories": {
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::shop-category.shop-category",
       "inversedBy": "shops"
     },
+
     "tags": {
       "type": "component",
       "repeatable": true,
       "component": "shared.tag"
     },
-    "features": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::shop-tag.shop-tag",
-      "inversedBy": "shops"
-    },
-    "description": {
-      "type": "richtext"
-    },
-    "ctaText": {
-      "type": "string"
-    },
-    "ctaLink": {
-      "type": "string"
-    },
+
+    "description": { "type": "richtext" },
+
     "mapMarker": {
       "type": "component",
       "repeatable": false,
       "component": "shared.map-marker"
     },
-    "isFeatured": {
-      "type": "boolean",
-      "default": false
-    },
-    "sortOrder": {
-      "type": "integer"
-    },
-    "promotions": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::shop-promotion.shop-promotion",
-      "mappedBy": "items"
-    },
+
     "related": {
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::shop.shop"
-    }
+    },
+
+    "isFeatured": { "type": "boolean", "default": false },
+    "sortOrder": { "type": "integer" }
   }
 }

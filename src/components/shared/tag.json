@@ -1,14 +1,9 @@
 {
   "collectionName": "components_shared_tags",
   "info": {
-    "displayName": "Tag",
-    "icon": "file-media"
+    "displayName": "Tag"
   },
-  "options": {},
   "attributes": {
-    "label": {
-      "type": "string",
-      "required": true
-    }
+    "label": { "type": "string", "required": true }
   }
 }
