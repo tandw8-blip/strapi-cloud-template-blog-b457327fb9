@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_shop_highlight_blocks",
+  "info": {
+    "displayName": "Highlight Block",
+    "description": "Image + text + CTA block used for key shopping story sections"
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false
+    },
+    "ctaLabel": {
+      "type": "string"
+    },
+    "ctaLink": {
+      "type": "string"
+    },
+    "alignment": {
+      "type": "enumeration",
+      "enum": ["left", "right"],
+      "default": "left"
+    }
+  }
+}
