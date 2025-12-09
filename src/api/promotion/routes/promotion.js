@@ -1,9 +1,9 @@
 'use strict';
 
 /**
- * shop-tag router.
+ * promotion router.
  */
 
 const { createCoreRouter } = require('@strapi/strapi').factories;
 
-module.exports = createCoreRouter('api::shop-tag.shop-tag');
+module.exports = createCoreRouter('api::promotion.promotion');

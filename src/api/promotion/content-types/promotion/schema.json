@@ -1,0 +1,82 @@
+{
+  "kind": "collectionType",
+  "collectionName": "promotions",
+  "info": {
+    "singularName": "promotion",
+    "pluralName": "promotions",
+    "displayName": "Promotion",
+    "description": "Promotional campaigns and special offers displayed on Shop page"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+
+    "slug": {
+      "type": "uid",
+      "targetField": "title",
+      "required": true
+    },
+
+    "thumbnail": {
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
+
+    "merchant": {
+      "type": "string",
+      "required": false
+    },
+
+    "shortDescription": {
+      "type": "text"
+    },
+
+    "description": {
+      "type": "richtext",
+      "required": false
+    },
+
+    "tnc": {
+      "type": "richtext",
+      "required": false
+    },
+
+    "dateStart": {
+      "type": "date"
+    },
+
+    "dateEnd": {
+      "type": "date"
+    },
+
+    "ctaLabel": {
+      "type": "string"
+    },
+
+    "ctaLink": {
+      "type": "string"
+    },
+
+    "isFeatured": {
+      "type": "boolean",
+      "default": false
+    },
+
+    "sortOrder": {
+      "type": "integer",
+      "default": 0
+    },
+
+    "tags": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.tag"
+    }
+  }
+}

@@ -1,9 +1,9 @@
 'use strict';
 
 /**
- * shop-tag service.
+ * shop-page service.
  */
 
 const { createCoreService } = require('@strapi/strapi').factories;
 
-module.exports = createCoreService('api::shop-tag.shop-tag');
+module.exports = createCoreService('api::shop-page.shop-page');

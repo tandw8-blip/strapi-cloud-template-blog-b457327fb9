@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_shop_promotion_sections",
+  "info": {
+    "displayName": "Promotion Section",
+    "description": "Displays selected promotions"
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "promotions": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::promotion.promotion"
+    },
+    "limit": {
+      "type": "integer",
+      "default": 6
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "kind": "singleType",
+  "collectionName": "shop_pages",
+  "info": {
+    "singularName": "shop-page",
+    "pluralName": "shop-pages",
+    "displayName": "Shop Page",
+    "description": "Main landing page for Shop section"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": false
+    },
+    "heroBanner": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.hero-banner"
+    },
+    "sections": {
+      "type": "dynamiczone",
+      "components": [
+        "shop.highlight-block",
+        "shop.featured-shop-section",
+        "shop.promotion-section"
+      ]
+    }
+  }
+}

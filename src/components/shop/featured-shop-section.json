@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_shop_featured_shop_sections",
+  "info": {
+    "displayName": "Featured Shop Section",
+    "description": "Auto-populated list of shops marked as isFeatured"
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "limit": {
+      "type": "integer",
+      "default": 10
+    },
+    "sortBy": {
+      "type": "enumeration",
+      "enum": ["sortOrder", "name", "createdAt"],
+      "default": "sortOrder"
+    }
+  }
+}
